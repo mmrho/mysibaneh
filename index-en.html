@@ -1,0 +1,109 @@
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./assets/css/all.css">
+    <link rel="stylesheet" href="./css/bootstrap.rtl.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        .login-icon {
+            font-size: 100px;
+            color: #3b82f6;
+        }
+        .login-text {
+            font-size: 20px;
+            color: #666;
+            margin: 10px 0;
+        }
+        .view-details {
+            color: #3b82f6;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+            text-align: left;
+            padding-left: 20px;
+        }
+        .tutorials {
+            display: flex;
+            overflow-x: auto;
+            padding: 0 20px;
+        }
+        .tutorial {
+            flex: 0 0 auto;
+            width: 300px;
+            height: 150px;
+            background-color: #f3f4f6;
+            border-radius: 10px;
+            margin-right: 10px;
+            background-image: url('https://placehold.co/300x150');
+            background-size: cover;
+            background-position: center;
+        }
+        .options {
+            padding: 20px;
+        }
+        .option {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .option i {
+            font-size: 24px;
+            color: #ef4444;
+            margin-right: 10px;
+        }
+        .option-text {
+            flex-grow: 1;
+            font-size: 18px;
+        }
+        .option-arrow {
+            color: #9ca3af;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <i class="fas fa-lightbulb login-icon"></i>
+        <div class="login-text">Please Login</div>
+        <a href="#" class="view-details">View Details</a>
+    </div>
+    <div class="section-title">Upcoming Tutorial</div>
+    <div class="tutorials">
+        <div class="tutorial"></div>
+        <div class="tutorial"></div>
+        <div class="tutorial"></div>
+    </div>
+    <div class="options">
+        <div class="section-title">Your Options</div>
+        <div class="option">
+            <i class="fas fa-flag"></i>
+            <div class="option-text">Request Tutorial</div>
+            <i class="fas fa-chevron-right option-arrow"></i>
+        </div>
+        <div class="option">
+            <i class="fas fa-bug"></i>
+            <div class="option-text">Report Bug</div>
+            <i class="fas fa-chevron-right option-arrow"></i>
+        </div>
+        <div class="option">
+            <i class="fas fa-map-pin"></i>
+            <div class="option-text">Pin Tutorial</div>
+            <i class="fas fa-chevron-right option-arrow"></i>
+        </div>
+    </div>
+</body>
+</html>
