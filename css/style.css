@@ -37,6 +37,9 @@ body {
 .input-group {
     margin-bottom: 20px;
 }
+.form-control{
+    font-size: 14px;
+}
 .input-group-append img {
     height: 30px;
 }
@@ -51,7 +54,6 @@ body {
     font-size: 18px;
     font-weight: bold;
     display: flex;
-    justify-content: center;
     align-items: center;
     text-align: center;
     justify-content: space-around;
@@ -69,5 +71,105 @@ body {
 .footer {
     text-align: center;
     margin-top: 200px;
+}
+
+
+
+
+
+
+
+
+
+.open-popup-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Popup overlay */
+.popup-overlay {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Popup content */
+.container-popup {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    text-align: center;
+}
+
+.row-popup {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.card {
+    background: rgb(241, 241, 245);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(14, 1, 1, 0.1);
+}
+
+.card-body {
+    padding: 50px 30px;
+}
+
+.popup-i i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.card-text-p {
+    font-size: 11px;
+    margin-bottom: 50px;
+}
+
+.text-p {
+    font-size: 16px;
+    margin-bottom: 100px;
+}
+
+.text-primary {
+    color: rgb(137, 189, 252);
+}
+
+.btn-primary {
+    background: rgb(91, 169, 255);
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+}
+
+.close-popup-btn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    background: rgb(241, 241, 245);
+    color: rgb(137, 189, 252);
 }
 
