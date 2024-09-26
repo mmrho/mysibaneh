@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>سیبانه</title>
     <link rel="stylesheet" href="./css/bootstrap.rtl.css">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./assets/css/all.css">
     <link rel="stylesheet" href="./css/style.css">
     <style>
 
@@ -47,13 +47,62 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <a href="./index-second-page.html"><button class="btn btn-login" type="button">ورود</button></a>
+                <button class="btn btn-login" type="button">ورود</button>
             </div>
         </div>
         <div class="row">
             <div class="col-12">
                 <p class="text-center mt-3">ثبت نام و یا ورود به منزله تایید <a href="#">قوانین</a> سیبانه است.
                 </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="popup-overlay" id="popup">
+        <div class="container container-popup">
+            <div class="row row-popup justify-content-center">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="container card-body text-center">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="popup-i">
+                                    <i class="fas fa-credit-card"></i>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <h5 class="card-title">خرید اشتراک استفاده از سیبانه</h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="card-text-p">به منظور استفاده از خدمات و سرویس‌های سیبانه ابتدا نسبت به تهیه
+                                        اشتراک اقدام فرمایید.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="text-p">
+                                        <a href="./index-second-page.html" class="text-primary">من از سیبانه اشتراک خریداری کرده‌ام</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <button type="button" class="btn btn-primary btn-block mt-4">خرید اشتراک</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="close-popup-btn">بستن پیغام</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -68,7 +117,30 @@
         </div>
 
     </div>
-    </div>
+
+    <script>
+        // Get the elements
+        const openPopupBtn = document.querySelector('.btn-login');
+        const closePopupBtn = document.querySelector('.close-popup-btn');
+        const popupOverlay = document.getElementById('popup');
+
+        // Function to open the popup
+        openPopupBtn.addEventListener('click', () => {
+            popupOverlay.style.display = 'flex';
+        });
+
+        // Function to close the popup
+        closePopupBtn.addEventListener('click', () => {
+            popupOverlay.style.display = 'none';
+        });
+
+        // Optional: Close the popup when clicking outside of it
+        window.addEventListener('click', (event) => {
+            if (event.target === popupOverlay) {
+                popupOverlay.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 
 </html>
