@@ -27,9 +27,6 @@
 
 
 
-
-
-
  function generatePlist(accessUrl, productId, postTitle, iconUrl, version, bundleId) {
     // Sanitize the post title
     const sanitizedTitle = postTitle.replace(/[^a-zA-Z0-9]+/g, "");
@@ -97,17 +94,9 @@ document.getElementById('downloadButton').addEventListener('click', function() {
     // Create a Blob from the plist content
     const blob = new Blob([plistContent], { type: 'application/xml' });
 
-    // Create a link element
-    const link = document.createElement('a');
-    link.href = URL.createObjectURL(blob);
-    link.download = 'app.plist';
+    // Create a download link
+    const downloadLink = `itms-services://?action=download-manifest&url=${accessUrl}`;
 
-    // Append the link to the body (required for Firefox)
-    document.body.appendChild(link);
-
-    // Programmatically click the link to trigger the download
-    link.click();
-
-    // Remove the link from the document
-    document.body.removeChild(link);
+    // Open the download link
+    window.open(downloadLink, '_self');
 });
