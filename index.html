@@ -7,7 +7,7 @@
     <title>سیبانه</title>
     <link rel="stylesheet" href="./css/bootstrap.rtl.css">
     <link rel="stylesheet" href="./assets/css/all.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./style.css">
     <style>
 
     </style>
@@ -117,30 +117,7 @@
         </div>
 
     </div>
-
-    <script>
-        // Get the elements
-        const openPopupBtn = document.querySelector('.btn-login');
-        const closePopupBtn = document.querySelector('.close-popup-btn');
-        const popupOverlay = document.getElementById('popup');
-
-        // Function to open the popup
-        openPopupBtn.addEventListener('click', () => {
-            popupOverlay.style.display = 'flex';
-        });
-
-        // Function to close the popup
-        closePopupBtn.addEventListener('click', () => {
-            popupOverlay.style.display = 'none';
-        });
-
-        // Optional: Close the popup when clicking outside of it
-        window.addEventListener('click', (event) => {
-            if (event.target === popupOverlay) {
-                popupOverlay.style.display = 'none';
-            }
-        });
-    </script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
